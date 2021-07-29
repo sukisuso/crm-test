@@ -293,7 +293,7 @@ export default class App extends Component {
                 editKey={id}
                 onBlur={this.updateTodoTitle} // save on enter/blur
                 html={data.title}
-                // onChange={this.handleDataChange} // save on change
+              // onChange={this.handleDataChange} // save on change
               />
             </div>
           </label>
@@ -320,13 +320,13 @@ export default class App extends Component {
               name='name'
               ref={el => this.inputElement = el}
               autoComplete='off'
-              style={{marginRight: 20}}
+              style={{ marginRight: 20 }}
             />
             <div className='todo-actions'>
               <button className='todo-create-button'>
                 Create todo
               </button>
-              <SettingsIcon onClick={this.openModal}  className='desktop-toggle' />
+              <SettingsIcon onClick={this.openModal} className='desktop-toggle' />
             </div>
           </form>
 
